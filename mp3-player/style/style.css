@@ -1,0 +1,92 @@
+body, html{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+}
+img{
+    cursor:pointer;
+    border:none;
+}
+.audio-container{
+    border:2px solid #EDB7E2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    gap:20px;
+    background-color: #e6e6d5;
+}
+.song-photo{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.song-photo img{
+    cursor:default;
+    height:200px;
+}
+#song-title{
+    border:3px solid #EDB7E2;
+    border-radius: 15px;
+    padding:9px;
+    font-size: 25px;
+    box-shadow: 2px 2px #fcd34d;
+}
+.playBtn{
+    background: url('playBtn.png') no-repeat;
+    width:163px;
+    height:163px;
+    border-radius: 50%;
+    display:block;
+    transition: all 1s;
+}
+
+.playBtn:active{
+    transform: translateY(5px);
+    content: url('playPressed.png');
+}
+
+.progress-bar{
+    height:7px;
+    background-color:#EDB7E2;
+    border-radius: 7px;
+    position: relative;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.nextBtn, .prevBtn{
+    width:40px;
+    height:40px;
+}
+.prevBtn{
+    transform: rotate(-180deg);
+}
+.time{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family:"Inconsolata", monospace;
+}
+.progress{
+    width:100%;
+}
+span{
+    font-size: 25px;
+    position:absolute;
+    top:-20px;
+    left:0;
+    right:0;
+    bottom:0;
+    cursor: default;
+}
